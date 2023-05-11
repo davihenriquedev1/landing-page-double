@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap');
+
+@keyframes piscaButton {
+    0% {
+        background-color: #00ffbf;
+        scale: 1;
+    }
+
+    50% {
+        background-color: #00ff55;
+        scale: 1.08;
+    }
+
+    100% {
+        background-color: #00ffbf;
+        scale: 1;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scrollbar-width: thin;
+    /*mozilla*/
+    scrollbar-color: #e9b200 #292929;
+}
+
+*::-webkit-scrollbar {
+    width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #4a505a;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 10);
+    border-radius: 20px;
+    border: 1px solid #dda90077;
+}
+
+
+.slider {
+    width: 100%;
+    overflow-x: hidden;
+}
+.slider-total {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+.slider-item {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+}
+
+
+#sec1 {
+    background-image: linear-gradient(180deg, #0d131f 0%, #0d1a31 97%, rgb(255, 255, 255) 100%)
+}
+#sec1 .itens {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.sec1-text-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec1-text {
+    margin: 30px 40px;
+}
+.sec1-text h2 {
+    font-family: 'Anton';
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.sec1-text h2 strong {
+    color: #50f1b4;
+    font-family: 'Anton';
+}
+.sec1-text ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.sec1-itens {
+    align-items: center;
+    display: flex;
+    margin: 10px 0px;
+}
+.sec1-text .seta1 {
+    width: 15px;
+    height: 10px;
+    margin-right: 10px;
+}
+.sec1-text ul li {
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(231, 231, 231);
+}
+.sec1-text button {
+    background-color: #00ffbf;
+    font-family: 'Anton';
+    padding: 16px;
+    font-size: 20px;
+    border: 1px solid #151e29;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    animation: piscaButton 1.7s linear infinite;
+    cursor: pointer;
+    color: #25303d;
+}
+.sec1-text button:hover {
+    background-color: #061930;
+    border: 1px solid #00ffbf;
+    color: #00ffbf;
+    scale: 1.2;
+    animation: none;
+}
+.sec1-video-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec1-video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+.sec1-video iframe {
+    position: absolute;
+    width: 92%;
+    height: 92%;
+    border: none;
+    top: 4%;
+    left: 4%;
+    border-radius: 20px;
+}
+
+
+#sec2 {
+    background-color: #fff;
+}
+#sec2 .itens {
+    display: flex;
+    flex-direction: row;
+}
+#sec2 .itens .left,
+.right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+#sec2 .pack-img img {
+    width: 100%;
+    margin-left: -60px;
+}
+#sec2 .right h1 {
+    font-family: 'Anton';
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #131920;
+    margin-bottom: 20px;
+}
+.pack-functions {
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    gap: 20px;
+    justify-content: center;
+    min-height: 72%;
+    min-width: 87%;
+}
+.pack-functions-item {
+    background-color: #dee5f3;
+    border-radius: 4px;
+}
+.pack-functions-item div {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.pack-functions-item h3 {
+    margin-bottom: 10px;
+}
+
+
+#sec3 {
+    background: linear-gradient(0deg, #031b3893 97%, #fffffff1 100%), url(../images/pexels-cottonbro-studio-5082579.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+#sec3 .plans-area-title {
+    text-align: center;
+    width: 100%;
+}
+#sec3 .plans-area-title h3 {
+    color: #dde9ff;
+    font-size: 40px;
+    margin: 20px 0px;
+}
+#sec3 .plans-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#sec3 .plans-item {
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0px 20px;
+    padding: 30px;
+    border-radius: 12px;
+}
+.plans-item-title {
+    background-color: #eba800;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+.plans-item-title:hover {
+    background-color: #151e29;
+    color: #eba800;
+}
+.plans-item-price {
+    background-color: #d6dee7;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+.plans-item-price strong {
+    font-size: 28px;
+}
+.plans-item-details {
+    margin: 10px 0px;
+}
+.plans-item-details p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #031b38;
+}
+.plans-item-inclusions {
+    margin: 20px 0px;
+}
+.inclusion-area {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    align-items: center;
+}
+.inclusion-area .mark {
+    margin-right: 10px;
+}
+.inclusion-area .mark img {
+    width: 25px;
+}
+
+
+#sec4 {
+    background-color: #061930;
+}
+#sec4 .area-details {
+    width: 100%;
+    display: flex;
+}
+#sec4 .text-details {
+    flex: 0.7;
+    display: flex;
+    align-items: center;
+}
+#sec4 .text-box {
+    justify-content: center;
+    align-items: center;
+}
+#sec4 .img-details {
+    margin-right: 20px;
+}
+#sec4 .img-details img {
+    width: 30px;
+}
+#sec4 .paragrafo-box {
+    display: flex;
+    margin-bottom: 24px;
+    padding: 10px 20px 10px 10px;
+}
+#sec4 .paragrafo-box:hover {
+    filter: brightness(3.0);
+}
+#sec4 .paragrafo-box p {
+    color: #b8c0ca;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+#sec4 .business-details {
+    background-color: #0d131f;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    flex: 0.3;
+}
+.area-business-img {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.area-business-img div {
+    margin: 15px 0px;
+}
+.area-business-img img {
+    max-width: 240px;
+}
+
+.footer {
+    width: 100%;
+    text-align: end;
+    padding: 20px;
+    background-color: #030407;
+}
+.footer h4 {
+    font-family:'Courier New', Courier, monospace;
+    color: #00ffbf;
+}
+.footer a {
+    text-decoration: none;
+}
+
+@media (max-width:980px) {
+    #sec1 .itens {
+        flex-direction: column-reverse;
+    }
+    #sec2 .itens {
+        flex-direction: column;
+    }
+    #sec2 .itens .left, .right {
+        margin-right: 0;
+    }
+    #sec2 .pack-img img {
+        margin-left: 0;
+    }
+
+
+    #sec3 .plans-area {
+        flex-direction: column;
+    }
+    #sec3 .plans-item {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .plans-item-price {
+        text-align: center;
+    }
+    .plans-item-inclusions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+}
+
+@media (max-width:750px) {
+    .sec1-text {
+        margin: 30px 0px;
+    }
+    .slider-item {
+        padding: 40px 15px;
+    }
+    #sec1 .sec1-text {
+        padding: 0px 20px;
+    }
+
+    #sec4 .area-details {
+        flex-direction: column;
+    }
+    .area-business-img {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:360px) {
+
+    .sec1-text h2,
+    .sec1-text h2 strong {
+        font-size: 100%;
+    }
+
+    #sec3 .plans-item {
+        padding: 10px;
+    }
+}
