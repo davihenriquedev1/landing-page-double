@@ -1,3 +1,3 @@
 # landing-page-lateral
  
-https://davihenriquelima.github.io/landing-page-double/
+https://davihenriquedev1.github.io/landing-page-double/
